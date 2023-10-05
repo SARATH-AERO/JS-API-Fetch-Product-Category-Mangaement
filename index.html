@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>querySelector() Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="background-color: aquamarine;">
+<H2 style="color: crimson;"> CATEGORY MANAGEMENT</H2>
+
+<h4 style="color: green;"> Add Category</h4>
+<label for="cname">Category name:</label>
+<input type="text" id="categoryName" name="cname"><br>
+<p id="addCategoryResponse"> </p>
+<button onclick="addCategory()" >Add</button>
+<hr>
+
+<h4 style="color: blue;"> Get all Category details</h4>
+<button onclick="getAllCategory()"> Get All Category</button>
+<br><br>
+<table id="myTable1">
+    <thead>
+      <tr>
+        <th>Category Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table body will be populated dynamically using JavaScript -->
+    </tbody>
+  </table>
+  <hr>
+
+  <h4 style="color: blue;"> Get all product details under the category</h4>
+  <label for="cname">Category name:</label>
+<input type="text" id="cnameongetAllProductunderCategory" name="cname"><br>
+<br>
+<button onclick="getAllProductunderCategory()"> Get All Products</button>
+<br><br>
+<table id="getAllProductunderCategoryTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>description</th>
+      <th>category name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table body will be populated dynamically using JavaScript -->
+  </tbody>
+</table>
+  <hr>
+
+  <h4 style="color: red;"> Remove Category</h4>
+  <label for="cname">Category name:</label>
+  <input type="text" id="removeCategoryName" name="cname"><br>
+  <p id="removeCategoryResponse" style="color: red;"> </p>
+  <button onclick="removeCategory()" >remove category</button>
+  <hr>
+
+</div>
+
+
+<div style="background-color:coral;">
+<hr>
+<H2 style="color: crimson;"> PRODUCT MANAGEMENT</H2>
+
+
+<div id="addProduct">
+<h4 style="color: green;"> Add Prodcut</h4>
+<label for="cname">Product name:</label>
+<input type="text" id="name" name="cname" required><br>
+
+<label for="cname">Product Price:</label>
+<input type="number" id="price" name="cname" required><br>
+
+<label for="cname">Product Quantity:</label>
+<input type="number" id="quantity" name="cname" required><br>
+
+<label for="cname">Product Description:</label>
+<input type="text" id="description" name="cname" required><br>
+
+<label for="cname">Category Name:</label>
+<input type="text" id="categoryName" name="cname" required><br>
+
+<p id="addProductResponse" style="color: red;"> </p>
+<button onclick="addProduct()" >Add Product</button>
+<hr>
+</div>
+
+
+
+
+
+<h4 style="color: blue;"> Get all product details</h4>
+<button onclick="getAllProduct()"> Get All Product</button>
+<br><br>
+<table id="myTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>description</th>
+        <th>category name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table body will be populated dynamically using JavaScript -->
+    </tbody>
+  </table>
+  <hr>
+
+  <h4 style="color: blue;"> Get product details by Name</h4>
+  <label for="cname">Product name:</label>
+<input type="text" id="cnameongetProductDetails" name="cname"><br>
+<br>
+<button onclick="getProductDetailsByName()"> Get Product Details</button>
+<br><br>
+<table id="getProductDetailsByNameTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>description</th>
+      <th>category name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table body will be populated dynamically using JavaScript -->
+  </tbody>
+</table>
+  <hr>
+
+
+  <div id="updateProduct">
+  <h4 style="color: yellow;"> Update Prodcut Details</h4>
+  <label for="cname">Product name:</label>
+  <input type="text" id="name" name="cname" style="margin-left: 48px;" required><br>
+  
+  <label for="cname" >Product Price:</label> 
+  <input type="number" id="price" name="cname" style="margin-left: 50px;"  ><br>
+  
+  <label for="cname">Product Quantity:</label>
+  <input type="number" id="quantity" name="cname" style="margin-left: 27px;" ><br>
+  
+  <p id="updateProductResponse" style="color: red;"> </p>
+  <button onclick="updateProduct1()" >update Product</button>
+  <hr>
+  </div>
+
+
+
+  <h4 style="color: red;"> Remove Product</h4>
+  <label for="cname">Product name:</label>
+  <input type="text" id="removeProductName" name="cname"><br>
+  <p id="removeProdcutResponse" style="color: red;"> </p>
+  <button onclick="removeProduct()" >remove product</button>
+  <hr>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
