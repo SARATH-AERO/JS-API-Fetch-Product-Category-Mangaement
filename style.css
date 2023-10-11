@@ -1,0 +1,15 @@
+tr:hover {
+    background: #f20347;
+}
+
+th {
+    background-color: aquamarine;
+}
+table {
+    width: 50%;
+}
+
+table, th,td {
+    border: 2px solid darkgoldenrod;
+    border-collapse: collapse;
+}
